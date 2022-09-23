@@ -1,6 +1,6 @@
 package com.proyectoJavaRigobelloGonzalo;
 
-public class Persona {
+public class Persona  {
 
     private String nombre;
     private String apellido;
@@ -34,4 +34,5 @@ public class Persona {
                 ", apellido='" + apellido + '\'' +
                 '}';
     }
+
 }
