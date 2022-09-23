@@ -2,16 +2,20 @@ package com.proyectoJavaRigobelloGonzalo;
 
 public class Persona  {
 
+    //SE INSTANCIAN LOS ATRIBUTOS DE LA CLASE
     private String nombre;
     private String apellido;
 
+    //CONSTRUCTOR VACIO
     public Persona (){}
 
+    //CONSTRUCTOR CON PARAMETROS
     public Persona (String nombre, String apellido){
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
+    //GETTERS AND SETTERS
     public void setNombre (String nombre){
         this.nombre = nombre;
     }
