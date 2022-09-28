@@ -41,7 +41,7 @@ public class Main {
         System.out.println("");
 
         // SE ORDENA DE MANERA INVERSA POR APELLIDO
-        System.out.println("Lista ordenada Alfabeticamente descendente por apellido");
+        System.out.println("Lista ordenada inversamente por apellido");
         lista.sort(Comparator.comparing(Persona::getApellido).reversed());
         System.out.println(lista);
         System.out.println("");
