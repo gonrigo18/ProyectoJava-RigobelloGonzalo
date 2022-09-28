@@ -2,6 +2,7 @@ package com.proyectoJavaRigobelloGonzalo;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
         Persona persona5 = new Persona ("Benjamin", "Perez");
 
         //CREO EL ARRAYLIST DONDE VAMOS A AGREGAR LOS OBJETOS
-        ArrayList<Persona> lista = new ArrayList<Persona>();
+        List<Persona> lista = new ArrayList<Persona>();
 
         //UTILIZANDO ADD AGREGAMOS UNA POR UNA LAS PERSONAS CREADAS
         lista.add(persona1);
@@ -28,19 +29,19 @@ public class Main {
         System.out.println("");
 
         // SE ORDENA ALFABETICAMENTE POR NOMBRE
-        System.out.println("Imprimir Lista ordenada Alfabeticamente por nombre");
+        System.out.println("Lista ordenada Alfabeticamente por nombre");
         lista.sort(Comparator.comparing(Persona::getNombre));
         System.out.println(lista);
         System.out.println("");
 
         // SE ORDENA ALFABETICAMENTE POR APELLIDO
-        System.out.println("Imprimir Lista ordenada Alfabeticamente por apellido");
+        System.out.println("Lista ordenada Alfabeticamente por apellido");
         lista.sort(Comparator.comparing(Persona::getApellido));
         System.out.println(lista);
         System.out.println("");
 
         // SE ORDENA DE MANERA INVERSA POR APELLIDO
-        System.out.println("Imprimir Lista ordenada Alfabeticamente descendente por apellido");
+        System.out.println("Lista ordenada Alfabeticamente descendente por apellido");
         lista.sort(Comparator.comparing(Persona::getApellido).reversed());
         System.out.println(lista);
         System.out.println("");
